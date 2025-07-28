@@ -98,3 +98,53 @@ footer {
     margin-top: 40px;
     border-top: 1px solid #333;
 }
+
+/* --- ESTILOS DA PÁGINA DE DETALHES --- */
+
+/* Link da Home no Header */
+.home-link {
+    text-decoration: none; /* Tira o sublinhado do link */
+    color: #e50914; /* Mantém a cor original */
+}
+
+/* Container principal da página de detalhes */
+.movie-details {
+    display: flex; /* ATIVANDO O FLEXBOX! */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    padding: 40px 0;
+}
+
+.poster-container {
+    flex: 1; /* O container do poster vai ocupar 1 fração do espaço */
+}
+
+.poster-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info-container {
+    flex: 2; /* O container de informações vai ocupar 2 frações, ou seja, o dobro do espaço do poster */
+}
+
+.info-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50; /* Um verde para a nota */
+    margin-bottom: 20px;
+}
+
+.synopsis {
+    font-size: 1rem;
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhor leitura */
+    margin-top: 10px;
+}
+
+.extra-info {
+    margin-top: 30px;
+}
