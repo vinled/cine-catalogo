@@ -1,0 +1,100 @@
+/* Reset básico e definições globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #141414; /* Um fundo escuro, típico de apps de streaming */
+    color: #fff;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- ESTILOS DO CABEÇALHO --- */
+header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+header .container {
+    display: flex; /* ATIVANDO O FLEXBOX! */
+    justify-content: space-between; /* Coloca um item no início e outro no fim */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+header h1 {
+    color: #e50914; /* Vermelho Netflix */
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --- ESTILOS DA GALERIA DE FILMES --- */
+.movie-gallery {
+    padding: 40px 0;
+}
+
+/* A MÁGICA DO GRID! */
+.gallery-grid {
+    display: grid;
+    /* Cria colunas que têm no mínimo 200px e no máximo 1 fração do espaço. 
+       Isso cria uma grade responsiva AUTOMATICAMENTE! */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.movie-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem não "vaze" para fora do card arredondado */
+    text-align: center;
+    transition: transform 0.2s; /* Efeito suave ao passar o mouse */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Aumenta um pouco o card ao passar o mouse */
+}
+
+.movie-card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: auto;
+}
+
+.movie-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+/* --- ESTILOS DO RODAPÉ --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
