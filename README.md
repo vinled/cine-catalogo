@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cine-Catálogo 🎬
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-First, run the development server:
+> **Status do Projeto:** Em desenvolvimento 🚧
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Projeto desenvolvido como parte de um plano de estudos intensivo para a transição de carreira para a área de Desenvolvimento Front-End, aplicando conceitos modernos de React, Next.js e consumo de APIs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###  Demo Online
+*(Adicione aqui o link do seu site quando fizermos o deploy na Vercel)*
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Screenshot
+*(Tire um print da tela do seu projeto funcionando e adicione aqui. Você pode arrastar a imagem para o editor do README no GitHub)*
+![Screenshot do Cine-Catálogo](./screenshot.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 Descrição
 
-## Learn More
+Aplicação web interativa para descoberta de filmes, que permite aos usuários explorar um catálogo de títulos populares buscados em tempo real. Este projeto foi desenvolvido como uma forma prática de aplicar e demonstrar conceitos de desenvolvimento front-end moderno, focando em componentização, consumo de APIs e design responsivo.
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Galeria Dinâmica:** Renderização de uma galeria de filmes populares a partir de dados consumidos da API do The Movie Database (TMDB).
+- **Componentização com React:** Estrutura baseada em componentes reutilizáveis (`Header`, `MovieCard`), promovendo um código limpo, modular e de fácil manutenção.
+- **Estilização com CSS Modules:** Estilos escopados para cada componente, evitando conflitos de CSS em escala global.
+- **Design Responsivo:** Interface totalmente adaptável a diferentes tamanhos de tela (mobile, tablet e desktop).
+- **Testes Unitários:** Testes iniciais com Jest e React Testing Library para garantir a qualidade e o funcionamento esperado dos componentes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tecnologias Utilizadas
 
-## Deploy on Vercel
+- **React.js:** Biblioteca principal para a construção da interface de usuário.
+- **Next.js:** Framework React para otimização, roteamento e renderização.
+- **JavaScript (ES6+):** Linguagem base para toda a lógica da aplicação.
+- **CSS Modules:** Para estilização de componentes de forma isolada.
+- **API RESTful:** Consumo de dados do [The Movie Database (TMDB)](https://www.themoviedb.org/).
+- **Jest & React Testing Library:** Para a execução de testes automatizados.
+- **Git & GitHub:** Para versionamento e hospedagem do código.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Como Rodar o Projeto Localmente
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para executar este projeto na sua máquina, siga os passos abaixo:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/vinled/cine-catalogo.git](https://github.com/vinled/cine-catalogo.git)
+    ```
+
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd cine-catalogo
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Configure as Variáveis de Ambiente:**
+    - Crie um arquivo chamado `.env.local` na raiz do projeto.
+    - Adicione sua chave da API do TMDB dentro dele, da seguinte forma:
+      ```
+      NEXT_PUBLIC_TMDB_API_KEY=SUA_CHAVE_AQUI
+      ```
+
+5.  **Rode o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+6.  Abra seu navegador e acesse `http://localhost:3000`.
+
+## 📚 Aprendizados
+
+Este projeto foi fundamental para solidificar meu conhecimento em:
+
+- Criação de interfaces dinâmicas e reativas com **React**.
+- Utilização de **Hooks** como `useState` para gerenciamento de estado e `useEffect` para efeitos colaterais (API calls).
+- A importância da **componentização** para a organização e reutilização de código.
+- Consumo de **APIs externas** de forma assíncrona com `async/await`.
+- O fluxo de trabalho com **Git e GitHub** para controle de versão.
+- Iniciação aos **testes automatizados**, uma prática essencial para o desenvolvimento de software de qualidade.
+
+---
+Feito por Vinicius Ledesma.
