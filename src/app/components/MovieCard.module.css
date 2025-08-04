@@ -1,0 +1,46 @@
+.movieCard {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 15px 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info h3 {
+  font-size: 1rem;
+  margin: 0 0 10px 0;
+}
+
+.info p {
+
+  margin: 0;
+}
+
+.ratingGood {
+    color: #4CAF50;
+    font-weight: bold;
+}
+.ratingRegular {
+    color: #FFC107;
+    font-weight: bold;
+}
