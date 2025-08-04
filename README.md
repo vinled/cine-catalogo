@@ -8,9 +8,6 @@
 
 Projeto desenvolvido como parte de um plano de estudos intensivo para a transição de carreira para a área de Desenvolvimento Front-End, aplicando conceitos modernos de React, Next.js e consumo de APIs.
 
-###  Demo Online
-*(Adicione aqui o link do seu site quando fizermos o deploy na Vercel)*
-
 ## 📄 Descrição
 
 Aplicação web interativa para descoberta de filmes, que permite aos usuários explorar um catálogo de títulos populares buscados em tempo real. Este projeto foi desenvolvido como uma forma prática de aplicar e demonstrar conceitos de desenvolvimento front-end moderno, focando em componentização, consumo de APIs e design responsivo.
