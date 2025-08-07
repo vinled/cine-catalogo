@@ -18,8 +18,7 @@ export default function Home() {
     // Criamos uma função async para poder usar 'await'
     async function fetchMovies() {
       try {
-        //const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
-        const apiKey = "e9d2a54099d4c87a7814d217e04bb696";
+        const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
         const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR&page=1`;
         
         const response = await fetch(url); // Faz a chamada para a API
