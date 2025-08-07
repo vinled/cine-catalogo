@@ -17,19 +17,27 @@ export default function Home() {
   useEffect(() => {
     // Criamos uma função async para poder usar 'await'
     async function fetchMovies() {
-      try {
-        const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
-        const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR&page=1`;
-        
-        const response = await fetch(url); // Faz a chamada para a API
-        const data = await response.json(); // Converte a resposta para JSON
-        
-        // 4. Usamos setMovies para ATUALIZAR nosso estado com os filmes da API
-        setMovies(data.results); 
-      } catch (error) {
-        console.error("Erro ao buscar filmes:", error); // Mostra um erro no console se algo der errado
-      }
-    }
+  try {
+    const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
+
+    // --- INÍCIO DA DEPURAÇÃO ---
+    console.log('Chave de API sendo usada:', apiKey); // Vamos ver se a chave está sendo lida
+    // --- FIM DA DEPURAÇÃO ---
+
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR&page=1`;
+
+    // --- INÍCIO DA DEPURAÇÃO ---
+    console.log('URL da Requisição:', url); // Vamos ver a URL final que está sendo chamada
+    // --- FIM DA DEPURAÇÃO ---
+
+    const response = await fetch(url);
+    const data = await response.json();
+
+    setMovies(data.results); 
+  } catch (error) {
+    console.error("Erro ao buscar filmes:", error);
+  }
+}
 
     fetchMovies(); // Executamos a função de busca
   }, []); // O array vazio [] garante que este efeito rode apenas UMA VEZ.
